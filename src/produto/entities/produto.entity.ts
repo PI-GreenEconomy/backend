@@ -45,7 +45,7 @@ export class Produto {
   foto: string;
 
   @ApiProperty()
-  @Column({ type: 'float', precision: 3, scale: 2, default: 0 })
+  @Column({ type: 'float', default: 0 })
   notaMedia: number;
 
   @ApiProperty()
