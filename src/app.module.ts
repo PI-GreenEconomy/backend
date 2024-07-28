@@ -1,16 +1,13 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Categoria } from './categoria/entities/categoria.entity';
 import { ConfigModule } from '@nestjs/config';
 import { CategoriaModule } from './categoria/categoria.module';
 import { ProdutoModule } from './produto/produto.module';
 import { UsuarioModule } from './usuario/usuario.module';
-import { Usuario } from './usuario/entities/usuario.entity';
-import { Produto } from './produto/entities/produto.entity';
 import { AuthModule } from './auth/auth.module';
 import { AppController } from './app.controller';
+import { ImageKitModule } from './imagekit/imagekit.module';
 import { ProdService } from './data/services/prod.service';
-import { DevService } from './data/services/dev.service';
 
 @Module({
   imports: [
@@ -26,6 +23,7 @@ import { DevService } from './data/services/dev.service';
     ProdutoModule,
     UsuarioModule,
     AuthModule,
+    ImageKitModule,
   ],
   controllers: [AppController],
   providers: [],
