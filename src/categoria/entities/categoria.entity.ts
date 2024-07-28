@@ -22,6 +22,11 @@ export class Categoria {
   @Column({ length: 255, nullable: false })
   slug: string;
 
+  @Transform(({ value }: TransformFnParams) => value?.trim())
+  @ApiProperty()
+  @Column({ nullable: true, default: 'default' })
+  icone: string;
+
   @ApiProperty()
   @OneToMany(() => Produto, (produto) => produto.categoria)
   produtos: Produto[];
