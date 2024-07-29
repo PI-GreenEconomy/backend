@@ -8,5 +8,9 @@ declare namespace NodeJS {
     IMAGE_PUBLIC_KEY: string;
     IMAGE_PRIVATE_KEY: string;
     IMAGE_URL: string;
+    ADMIN_USERNAME: string;
+    ADMIN_EMAIL: string;
+    ADMIN_PASSWORD: string;
+    ADMIN_FUNCTION: string;
   }
 }
