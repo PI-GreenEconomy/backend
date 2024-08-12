@@ -5,6 +5,8 @@ declare namespace NodeJS {
     DB_PORT: number;
     DB_USERNAME: string;
     DB_PASSWORD: string;
+    API_FRETE_URL: string;
+    API_FRETE_KEY: string;
     IMAGE_PUBLIC_KEY: string;
     IMAGE_PRIVATE_KEY: string;
     IMAGE_URL: string;

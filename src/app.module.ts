@@ -8,6 +8,7 @@ import { AppController } from './app.controller';
 import { ImageKitModule } from './imagekit/imagekit.module';
 import { SeedingModule } from './database/seeding/seeding.module';
 import { DatabaseModule } from './database/database.module';
+import { FreteModule } from './frete/frete.module';
 
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { DatabaseModule } from './database/database.module';
     AuthModule,
     ImageKitModule,
     SeedingModule,
+    FreteModule,
   ],
   controllers: [AppController],
   providers: [],
