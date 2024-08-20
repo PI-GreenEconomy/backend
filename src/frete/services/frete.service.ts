@@ -10,7 +10,7 @@ export class FreteService {
         postal_code: cepOrigem,
       },
       to: {
-        postal_code: '20031170',
+        postal_code: '90570020',
       },
       package: {
         height: 4,
